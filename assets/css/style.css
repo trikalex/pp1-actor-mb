@@ -9,4 +9,19 @@
 body {
     font-family: Abel, Syne, sans-serif;
     font-weight: 400;
+    color: black;
+ }
+
+ /* Navigation & Headings */
+
+ h1, h2 {
+    font-family: Abel, Syne, sans-serif;
+    text-transform: uppercase;
+    color: #424242;
+    letter-spacing: 1px;
+ }
+
+ #name {
+    font-size: 300%;
+    float: right;
  }
