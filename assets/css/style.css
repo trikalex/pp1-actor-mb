@@ -9,7 +9,7 @@
 body {
     font-family: Abel, Syne, sans-serif;
     font-weight: 400;
-    color: black;
+    color: rgb(71, 71, 71);
  }
 
  /* Navigation & Headings */
@@ -18,10 +18,49 @@ body {
     font-family: Abel, Syne, sans-serif;
     text-transform: uppercase;
     color: #424242;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    
  }
 
  #name {
-    font-size: 300%;
+    font-size: 200%;
     float: right;
+    /* position: relative; */
+    display: flex;
+    margin-top: 240px;
+    margin-right: none;
+    
+ }
+
+ /* navi */
+
+ #navi {
+    display: flex;
+    float: right;
+    margin-top: 30px;
+ }
+ 
+ #navi li {
+    list-style-type: none;
+    margin-right: 120px;
+ }
+
+ #navi a {
+    text-decoration: none;
+    color: inherit;
+ }
+
+ #navi, #name {
+   line-height: 75px;
+ }
+
+ #navi a:hover {
+   border-bottom: 1px #424242;
+   font-weight: bold;
+ }
+
+ .active {
+   /* border-bottom: 1px solid #424242; */
+   color: #424242;
+   font-weight: bold;
  }
