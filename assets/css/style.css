@@ -9,7 +9,9 @@
 body {
     font-family: Abel, Syne, sans-serif;
     font-weight: 400;
-    color: rgb(71, 71, 71);
+    color: #dadada;
+    background-color: #757575;
+    padding: 20px;
  }
 
  /* Navigation & Headings */
@@ -17,27 +19,23 @@ body {
  h1, h2 {
     font-family: Abel, Syne, sans-serif;
     text-transform: uppercase;
-    color: #424242;
+    color: #ffffff;
     letter-spacing: 2px;
     
  }
 
  #name {
-    font-size: 200%;
-    float: right;
-    /* position: relative; */
+    font-size: 180%;
+    text-align: center;
     display: flex;
-    margin-top: 240px;
-    margin-right: none;
-    
- }
+   }
 
  /* navi */
 
  #navi {
     display: flex;
     float: right;
-    margin-top: 30px;
+    font-size: larger;
  }
  
  #navi li {
@@ -51,16 +49,52 @@ body {
  }
 
  #navi, #name {
-   line-height: 75px;
+   line-height: 105px;
  }
 
  #navi a:hover {
-   border-bottom: 1px #424242;
+   border-bottom: 1px #dadada;
    font-weight: bold;
  }
 
  .active {
-   /* border-bottom: 1px solid #424242; */
-   color: #424242;
+   color: #dadada;
    font-weight: bold;
+ }
+
+ /* home image & portrait image */
+
+ #home-image {
+   height: 700px;
+   width: 100%;
+   margin-top: 25px;
+   background: url('../images/BGromantheatre1.jpg') no-repeat center center;
+   background-position: center center;
+   background-size: cover;
+   /* opacity: 60%; */
+ }
+
+ #portrait {
+   height: 700px;
+   width: 30%;
+   margin-top: 25px;
+   background: url('../images/profile2.jpg') no-repeat center center;
+   float: left;
+   background-size: contain;
+   background-position: left;
+ }
+
+ #quote p {
+   color: #ffffff;
+   outline: 1px solid #dadada;
+   border-radius: 5px;
+   width: 30%;
+   display: inline-block;
+   font-size: large;
+   position: relative;
+   left: 20%;
+   bottom: -10%;
+   background-color: #7575759a;
+   opacity: 90%;
+
  }
