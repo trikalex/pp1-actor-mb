@@ -1,100 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Syne&display=swap');
- 
+
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 body {
-    font-family: Abel, Syne, sans-serif;
-    font-weight: 400;
-    color: #dadada;
-    background-color: #757575;
-    padding: 20px;
- }
+  font-family: Abel, Syne, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #757267;
+  padding: 20px;
+}
 
- /* Navigation & Headings */
+/* Navigation & Headings */
 
- h1, h2 {
-    font-family: Abel, Syne, sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
-    letter-spacing: 2px;
-    
- }
+h1, h2 {
+  font-family: Abel, Syne, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
 
- #name {
-    font-size: 180%;
-    text-align: center;
-    display: flex;
-   }
+}
 
- /* navi */
+/* navi */
 
- #navi {
-    display: flex;
-    float: right;
-    font-size: larger;
- }
- 
- #navi li {
-    list-style-type: none;
-    margin-right: 120px;
- }
+#navi {
+  display: flex;
+  float: right;
+  font-size: larger;
+  line-height: 105px;
+}
 
- #navi a {
-    text-decoration: none;
-    color: inherit;
- }
+#navi li {
+  list-style-type: none;
+  margin-right: 120px;
+}
 
- #navi, #name {
-   line-height: 105px;
- }
+#navi a {
+  text-decoration: none;
+  color: inherit;
+}
 
- #navi a:hover {
-   border-bottom: 1px #dadada;
-   font-weight: bold;
- }
+#mask {
+  float: left;
+  font-size: 250%;
+  margin-left: 120px;
+}
 
- .active {
-   color: #dadada;
-   font-weight: bold;
- }
+#navi, #mask {
+  line-height: 75px;
+}
 
- /* home image & portrait image */
+#navi a:hover {
+  border-bottom: 1px gold;
+  font-weight: bold;
+}
 
- #home-image {
-   height: 700px;
-   width: 100%;
-   margin-top: 25px;
-   background: url('../images/BGromantheatre1.jpg') no-repeat center center;
-   background-position: center center;
-   background-size: cover;
-   /* opacity: 60%; */
- }
+#mask a:hover {
+  border-bottom: 1px gold;
+  font-weight: bold;
+}
 
- #portrait {
-   height: 700px;
-   width: 30%;
-   margin-top: 25px;
-   background: url('../images/profile2.jpg') no-repeat center center;
-   float: left;
-   background-size: contain;
-   background-position: left;
- }
+.active {
+  color: gold;
+  font-weight: bold;
+}
 
- #quote p {
-   color: #ffffff;
-   outline: 1px solid #dadada;
-   border-radius: 5px;
-   width: 30%;
-   display: inline-block;
-   font-size: large;
-   position: relative;
-   left: 20%;
-   bottom: -10%;
-   background-color: #7575759a;
-   opacity: 90%;
+/* home image */
 
- }
+#name p {
+  font-size: large;
+  letter-spacing: 2px;
+  text-align: top;
+  color: #ffffff;
+  font-style: italic;
+}
+
+#name {
+  color: #ffffff;
+  font-size: 480%;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 200px;
+  margin-left: 10%;
+  margin-top: 65px;
+
+  width: 80%;
+  height: 300px;
+
+  background-color: rgba(212, 181, 0, 0.404);
+  display: inline-table;
+
+}
+
+#home-outer {
+
+}
+
+#home-image {
+  height: 700px;
+  width: 100%;
+  margin-top: 75px;
+  background: url('../images/BGromantheatre1.jpg') no-repeat center center;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* portrait & intro */
+
+.intro {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+#portrait {
+  height: inherit;
+  /* width: 30%; */
+  margin-top: 20px;
+  background: url('../images/profile2.jpg') no-repeat ;
+  background-size: contain;
+  flex: 50%;
+}
+
+#quote {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  outline: 1px solid #dadada;
+  border-radius: 5px;
+  font-size: large;
+  background-color: #7575759a;
+  opacity: 90%;
+  flex: 50%;
+
+}
+
+/* responsive design styling */
+@media (max-width: 800px) {
+  #portrait, #quote { flex: 100%; }
+}
