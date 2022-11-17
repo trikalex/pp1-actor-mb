@@ -10,7 +10,7 @@ body {
   font-family: Abel, Syne, sans-serif;
   font-weight: 400;
   color: #ffffff;
-  background-color: #757267;
+  background-color: #3b3b39;
   padding: 20px;
 }
 
@@ -47,6 +47,7 @@ h1, h2 {
   float: left;
   font-size: 250%;
   margin-left: 120px;
+  color: rgb(209, 36, 6);
 }
 
 #navi, #mask {
@@ -89,15 +90,17 @@ h1, h2 {
 
   width: 80%;
   height: 300px;
+  outline: 1px solid #dadada;
+  border-radius: 5px;
 
   background-color: rgba(212, 181, 0, 0.404);
   display: inline-table;
 
 }
 
-#home-outer {
-
-}
+/* #home-outer {
+  padding: ;
+} */
 
 #home-image {
   height: 700px;
@@ -108,40 +111,124 @@ h1, h2 {
   background-size: cover;
 }
 
-/* portrait & intro */
+/* portrait & about */
 
 .intro {
-  height: 700px;
+  height: 600px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   font-size: 30px;
   text-align: center;
+  align-items: stretch;
 }
 
-#portrait {
-  height: inherit;
-  /* width: 30%; */
-  margin-top: 20px;
-  background: url('../images/profile2.jpg') no-repeat ;
-  background-size: contain;
-  flex: 50%;
-}
-
-#quote {
+#quote1 {
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 20px 0 0;
   color: #ffffff;
   outline: 1px solid #dadada;
   border-radius: 5px;
   font-size: large;
-  background-color: #7575759a;
-  opacity: 90%;
-  flex: 50%;
+  background-color: rgba(179, 90, 6, 0.158);
+  flex: 34%;
+  padding: 10px;
+}
 
+#quote1 li {
+  text-align: left;
+  /* font-style:italic; */
+  font-size: medium;
+  list-style: none;
+}
+
+#quote2 {
+  text-align: center;
+  margin: 20px 0 0 20px;
+  color: #ffffff;
+  outline: 1px solid #dadada;
+  border-radius: 5px;
+  font-size: large;
+  background-color: rgba(179, 90, 6, 0.158);
+  flex: 34%;
+  padding: 10px;
+}
+
+#portrait-container {
+margin: 20px 0 0 0;
+height: 600px;
+width: 300px;
+/* padding: 10px; */
+border-style: solid;
+border-color: #dadada;
+border-width: 1px;
+border-radius: 5px;
+flex: 25%;
+}
+
+#portrait {
+  height: 100%;
+  background: url('../images/profile2.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 5px;
+  /* object-fit: fill; */
+  
 }
 
 /* responsive design styling */
 @media (max-width: 800px) {
-  #portrait, #quote { flex: 100%; }
+  #portrait, #quote1, #quote2, #portrait-container { flex: 100%; }
+}
+
+/* #tnb-container {
+  
+} */
+
+#tnb {
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+  background: url('../images/BGmasks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: stretch;
+}
+
+#tnb h2 {
+  text-align: center;
+  background-color: rgba(70, 59, 1, 0.301);
+  width: 20%;
+  height: inherit;
+  margin-left: 40%;
+  padding: 90px 0 0 0;
+  border: 2px solid #dadada;
+  border-top: none;
+  box-sizing: content-box;
+}
+
+/* social media links */
+
+footer {
+  height: 100px;
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.social-networks >li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 7%;
+  color: #dadada;
 }
