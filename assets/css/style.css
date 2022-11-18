@@ -10,7 +10,7 @@ body {
   font-family: Abel, Syne, sans-serif;
   font-weight: 400;
   color: #ffffff;
-  background-color: #3b3b39;
+  background-color: #383838;
   padding: 20px;
 }
 
@@ -127,10 +127,10 @@ h1, h2 {
   text-align: center;
   margin: 20px 20px 0 0;
   color: #ffffff;
-  outline: 1px solid #dadada;
+  outline: 1px solid #858585;
   border-radius: 5px;
   font-size: large;
-  background-color: rgba(179, 90, 6, 0.158);
+  background-color: rgba(68, 62, 32, 0.349);
   flex: 34%;
   padding: 10px;
 }
@@ -146,10 +146,10 @@ h1, h2 {
   text-align: center;
   margin: 20px 0 0 20px;
   color: #ffffff;
-  outline: 1px solid #dadada;
+  outline: 1px solid #858585;
   border-radius: 5px;
   font-size: large;
-  background-color: rgba(179, 90, 6, 0.158);
+  background-color: rgba(68, 62, 32, 0.349);
   flex: 34%;
   padding: 10px;
 }
@@ -160,7 +160,7 @@ height: 600px;
 width: 300px;
 /* padding: 10px; */
 border-style: solid;
-border-color: #dadada;
+border-color: #858585;
 border-width: 1px;
 border-radius: 5px;
 flex: 25%;
@@ -176,6 +176,7 @@ flex: 25%;
 }
 
 /* responsive design styling */
+
 @media (max-width: 800px) {
   #portrait, #quote1, #quote2, #portrait-container { flex: 100%; }
 }
