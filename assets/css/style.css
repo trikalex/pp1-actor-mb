@@ -47,6 +47,7 @@ h1, h2 {
   float: left;
   font-size: 250%;
   margin-left: 120px;
+  margin-right: 200px;
   color: rgb(209, 36, 6);
 }
 
@@ -230,6 +231,20 @@ footer {
 .social-networks i {
   font-size: 160%;
   margin: 1%;
-  padding: 7%;
+  padding: 5%;
   color: #dadada;
+}
+
+/* media page */
+
+#pictures {
+  clear: both;
+  line-height: 0;
+  column-count: 3;
+  column-gap: 3px;
+}
+
+#pictures > img {
+  width: 100%;
+  margin-top: 3px;
 }
