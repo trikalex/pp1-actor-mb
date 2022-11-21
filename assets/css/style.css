@@ -6,6 +6,10 @@
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Abel, Syne, sans-serif;
   font-weight: 400;
@@ -57,13 +61,16 @@ h1, h2 {
 }
 
 #navi a:hover {
-  border-bottom: 1px gold;
   font-weight: bold;
 }
 
-#mask a:hover {
-  border-bottom: 1px gold;
-  font-weight: bold;
+#mask {
+  transition: all 0.2s ease-in-out;
+}
+
+#mask:hover {
+  color: gold;
+  
 }
 
 .active {
@@ -83,12 +90,12 @@ h1, h2 {
 
 #name {
   color: #ffffff;
-  font-size: 480%;
+  font-size: 3vw;
   letter-spacing: 2px;
   text-align: center;
   line-height: 200px;
-  margin-left: 10%;
-  margin-top: 65px;
+  /* margin-left: 10%;
+  margin-top: 65px; */
 
   width: 80%;
   height: 300px;
@@ -97,6 +104,7 @@ h1, h2 {
 
   background-color: rgba(212, 181, 0, 0.404);
   display: inline-table;
+  margin: 2em auto;
 
 }
 
@@ -105,18 +113,19 @@ h1, h2 {
 } */
 
 #home-image {
-  height: 700px;
+  /* height: 700px; */
   width: 100%;
   margin-top: 75px;
   background: url('../images/BGromantheatre1.jpg') no-repeat center center;
   background-position: center center;
   background-size: cover;
+  text-align: center;
 }
 
 /* portrait & about */
 
 .intro {
-  height: 600px;
+  /* height: 600px; */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -177,11 +186,9 @@ flex: 25%;
 
 @media (max-width: 800px) {
   #portrait, #quote1, #quote2, #portrait-container { flex: 100%; }
+  #name {font-size: 6vw;}
 }
 
-/* #tnb-container {
-  
-} */
 
 #tnb {
   width: 100%;
