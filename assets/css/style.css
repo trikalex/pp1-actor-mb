@@ -113,10 +113,9 @@ h1, h2 {
 } */
 
 #home-image {
-  /* height: 700px; */
   width: 100%;
   margin-top: 75px;
-  background: url('../images/BGromantheatre1.jpg') no-repeat center center;
+  background: url('../images/bg.romantheatre1.jpg') no-repeat center center;
   background-position: center center;
   background-size: cover;
   text-align: center;
@@ -125,7 +124,6 @@ h1, h2 {
 /* portrait & about */
 
 .intro {
-  /* height: 600px; */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -194,7 +192,7 @@ flex: 25%;
   width: 100%;
   height: 350px;
   margin-top: 50px;
-  background: url('../images/BGmasks.jpg');
+  background: url('../images/bg.masks.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -256,7 +254,7 @@ footer {
 /* contact form */
 
 #form {
-  background: url(../images/BGContact.jpg) no-repeat center center;
+  background: url(../images/bg.contact.jpg) no-repeat center center;
   background-position: center;
   background-size: cover;
   height: 1200px;
