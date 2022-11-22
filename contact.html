@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+    <!-- header & nav -->
     <header>
         <a href="index.html">
             <i class="fa-solid fa-masks-theater" id="mask"></i>
@@ -35,9 +37,11 @@
             </ol>
         </nav>
     </header>
+
+    <!-- form section  -->
     <section>
         <div id="form">
-            <form action="https://formdump.codeinstitute.net/" method="post" class="contact-form">
+            <form action="https://formdump.codeinstitute.net/" method="post">
                 <h2 id="title">Get in touch!</h2>
                 <br>
                 <label for="name">Your Name</label>
@@ -49,11 +53,13 @@
                 <label for="message">Message</label>
                 <textarea name="" id="message" class="text-input"></textarea>
                 <br>
-                <input type="submit" value="Send Your Message">
-                <input type="reset" value="Reset">
+                <input type="submit" value="Send Message" class="action" id="send">
+                <input type="reset" value="Reset" class="action" id="reset">
             </form>
         </div>
     </section>
+
+    <!-- footer, social media links -->
     <footer>
         <ul class="social-networks">
             <li>
@@ -78,6 +84,7 @@
             </li>
         </ul>
     </footer>
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/05fc023ef5.js" crossorigin="anonymous"></script>
 </body>
