@@ -262,30 +262,40 @@ footer {
   width: 50%;
   margin: 75px auto;
   clear: both;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .contact-form {
   background-color: rgba(70, 59, 1, 0.301);
-  width: inherit;
+  width: 65%;
   border: 1px solid #858585;
   border-radius: 4px;
   padding: 20px;
   letter-spacing: 2px;
-  /* position: absolute; */
+  /* display: inline-table; */
+  /* margin: 150px 11% 25px;  */
   display: inline-table;
-  margin: 150px 11% 0; 
+  margin: 7.5em 15%;
 }
 
 .text-input {
   background: transparent;
-  width: 50%;
+  width: 40%;
   height: 30px;
   margin: 5px 0 20px 0;
   border: 1px solid #858585;
   border-radius: 4px;
+  padding:5px 10px;
   font-size: 15px;
   color: #dadada;
+}
+
+#message {
+  /* width: inherit; */
+  width: 90%;
+  height: 300px;
+  color: #dadada;
+  text-align: left;
 }
 
 form #title {
@@ -302,14 +312,6 @@ form #full-name, #email, #message {
   flex-direction: column;
   margin-bottom: 25px;
   outline: 0;
-}
-
-#message {
-  padding: 15px 140px;
-  /* width: inherit; */
-  max-width: fit-content;
-  height: 200px;
-  color: #dadada;
 }
 
 form .action {
