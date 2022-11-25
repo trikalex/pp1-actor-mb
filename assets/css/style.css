@@ -353,7 +353,7 @@ form label {
     flex-direction: row-reverse;
 }
 
-#quote1, #quote2, {
+#quote1, #quote2 {
   flex: 100%;
 }
 
