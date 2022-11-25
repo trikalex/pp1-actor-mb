@@ -141,6 +141,7 @@ h1, h2 {
   background-color: rgba(70, 59, 1, 0.349);
   flex: 34%;
   padding: 10px;
+  padding-top: 3%;
 }
 
 #quote1 li {
@@ -159,6 +160,7 @@ h1, h2 {
   background-color: rgba(70, 59, 1, 0.349);
   flex: 34%;
   padding: 10px;
+  padding-top: 7%;
 }
 
 #portrait-container {
@@ -259,7 +261,7 @@ footer {
   background: url(../images/bg.contact.jpg) no-repeat center center;
   background-size: cover;
   height: 1200px;
-  width: 50%;
+  width: 55%;
   margin: 75px auto;
   clear: both;
   margin-bottom: 15px;
@@ -267,15 +269,15 @@ footer {
 
 .contact-form {
   background-color: rgba(70, 59, 1, 0.301);
-  width: 65%;
+  width: 60%;
   border: 1px solid #858585;
   border-radius: 4px;
-  padding: 20px;
+  padding: 15px;
   letter-spacing: 2px;
   /* display: inline-table; */
   /* margin: 150px 11% 25px;  */
   display: inline-table;
-  margin: 7.5em 15%;
+  margin: 7.5em 19%;
 }
 
 .text-input {
@@ -343,12 +345,16 @@ form label {
 /* responsive design styling */
 
 @media (max-width: 800px) {
-  #portrait, #quote1, #quote2, #portrait-container, #form { flex: 100%; }
+  #portrait, #portrait-container, #form { flex: 100%; }
   #name {font-size: 6vw;}
   #navi {
     margin-left: 5px; 
     line-height: 25px;
     flex-direction: row-reverse;
+}
+
+#quote1, #quote2, {
+  flex: 100%;
 }
 
 #navi li {
@@ -357,5 +363,12 @@ form label {
   #mask {
     margin-left: 30px;
     margin-right: 50px;
+  }
+
+  #form, .contact-form {
+    width: 90%;
+    margin: 75px auto;
+    clear: both;
+    display: inline-table;
   }
 }
