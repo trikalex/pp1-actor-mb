@@ -344,6 +344,16 @@ form label {
 
 /* responsive design styling */
 
+@media (max-width: 1200px) {
+  #form {
+    width: 75%;
+    margin: 75px auto;
+    margin-left: 10%;
+    clear: both;
+    display: inline-table;
+  }
+}
+
 @media (max-width: 800px) {
   #portrait, #portrait-container, #form { flex: 100%; }
   #name {font-size: 6vw;}
@@ -358,7 +368,7 @@ form label {
 }
 
 #navi li {
-  margin-right: 25px;
+  margin-right: 30px;
 }
   #mask {
     margin-left: 30px;
@@ -368,6 +378,7 @@ form label {
   #form, .contact-form {
     width: 90%;
     margin: 75px auto;
+    margin-left: 1.5%;
     clear: both;
     display: inline-table;
   }
