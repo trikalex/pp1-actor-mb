@@ -83,8 +83,10 @@ that is overlayed with the Artist name and a quick introduction to his career ti
 
 ### Followup Features
 
-- Another useful functionality that could be implemented in this project would be a Calendar Tab that would provide the user with a clear overview of the Artist schedule,
-where already booked and free dates are highlighted in a distinct way.
+- A first followup feature that could improve the user experience would be the ability to preview each photo separately in the Media gallery. 
+  - This feature would enable the user to scroll through the gallery from the preview perspective.  
+- An extra useful functionality that could be implemented in this project would be a Calendar tab, that would provide the user with a clear overview of the Artists schedule,
+where the already booked and the free dates are highlighted in a distinct way.
 
 ## Testing 
 
