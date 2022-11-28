@@ -89,8 +89,15 @@ where already booked and free dates are highlighted in a distinct way.
 ## Testing 
 
 - The functionality and scaling testing was done extensively through the inspector toll on the Google Chrome browser but also on iPhone 13 & iPhone 13 Pro devices.
-- So far it was concluded that the scaling works perfectly well down to iPhone 13 Pro or 390 / 844px, with some of the elemts that are not perfectly centered when scaling down to 320 / 1415px. 
-- However all functionalities are working correctly, are perfectly accessible and visible even when scaling down to 320 / 1415px.
+- So far it was concluded that the scaling works well down to iPhone 13 Pro or 390 / 844px, with some of the elemts that are not perfectly centered when scaling down to 320 / 1415px. 
+- However all functionalities are working correctly, are perfectly accessible and visible even when scaling down to 320px.
+
+### Bugs & issues
+  - One of the main challenges was to keep the [BNT] text box section on the Home Page centered when scaling down to smaller screens.
+    - The solution for this problem came with the use of @media scaling and by using percentages for the width and the left margin. 
+
+### Extra testing
+
 - Extra testing was performed for the overall score of the website on different levels through the use of Lighthouse found inside the inspector tools in Google Chrome.
 - The results were as follows:
 
@@ -106,7 +113,9 @@ where already booked and free dates are highlighted in a distinct way.
 
 ### Unfixed Issues
 
-- 
+- **Navigation** - on small screens 320px will scale slightly to the left side.
+- **About section** - the text boxes will display slightly off centered from 1024px down to 320px 
+- **Contact form** - will display slightly offcentered from 768px and down
 
 ## Deployment
 

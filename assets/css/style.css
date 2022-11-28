@@ -196,20 +196,21 @@ flex: 25%;
 
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   align-items: stretch;
 }
 
 #tnb h2 {
   text-align: center;
   background-color: rgba(70, 59, 1, 0.301);
-  width: 40%;
+  width: 20%;
   height: inherit;
-  margin-left: 30%;
+  margin-left: 40%;
   padding: 90px 0 0 0;
   border: 2px solid #dadada;
   border-top: none;
   box-sizing: content-box;
+  font-size: 1.4em;
+  overflow: visible;
 }
 
 #tnb-icon {
@@ -345,13 +346,17 @@ form label {
 
 /* responsive design styling */
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   #form {
     width: 75%;
     margin: 75px auto;
     margin-left: 10%;
     clear: both;
     display: inline-table;
+  }
+  #navi {
+    margin-left: 5px; 
+    line-height: 35px;
   }
 }
 
@@ -360,7 +365,7 @@ form label {
   #name {font-size: 6vw;}
   #navi {
     margin-left: 5px; 
-    line-height: 25px;
+    line-height: 80px;
     flex-direction: row-reverse;
 }
 
@@ -369,7 +374,8 @@ form label {
 }
 
 #navi li {
-  margin-right: 30px;
+  margin-right: 25px;
+
 }
   #mask {
     margin-left: 30px;
@@ -384,3 +390,40 @@ form label {
     display: inline-table;
   }
 }
+
+@media (max-width: 425px) {
+  #tnb h2 {
+    width: 50%;
+    margin-left: 25%;
+  }
+  #navi {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 25px;
+}
+}
+
+@media (max-width: 375px) {
+  #tnb h2 {
+    width: 50%;
+    margin-left: 25%;
+  }
+  #navi {
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 25px;
+}
+}
+
+@media (max-width: 320px) {
+  #navi {
+    margin-left: 15%;
+    margin-right: 0; 
+    line-height: 25px;
+} 
+#tnb h2 {
+  width: 50%;
+  margin-left: 25%;
+}
+}
+
