@@ -20,7 +20,8 @@ body {
 
 /* Navigation & Headings */
 
-h1, h2 {
+h1,
+h2 {
   font-family: Abel, Syne, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -56,7 +57,8 @@ h1, h2 {
   transition: all 0.2s ease-in-out;
 }
 
-#navi, #mask {
+#navi,
+#mask {
   line-height: 75px;
 }
 
@@ -112,7 +114,7 @@ h1, h2 {
 
 #home-image {
   width: 100%;
-  margin-top: 75px;
+  margin-top: 115px;
   background: url('../images/bg.romantheatre1.jpg') no-repeat center center;
   background-position: center center;
   background-size: cover;
@@ -165,14 +167,14 @@ h1, h2 {
 }
 
 #portrait-container {
-margin: 20px 0 0 0;
-height: 600px;
-width: 300px;
-border-style: solid;
-border-color: #858585;
-border-width: 1px;
-border-radius: 5px;
-flex: 25%;
+  margin: 20px 0 0 0;
+  height: 600px;
+  width: 300px;
+  border-style: solid;
+  border-color: #858585;
+  border-width: 1px;
+  border-radius: 5px;
+  flex: 25%;
 }
 
 #portrait {
@@ -232,7 +234,7 @@ footer {
   text-align: center;
 }
 
-.social-networks >li {
+.social-networks>li {
   display: inline;
 }
 
@@ -252,7 +254,7 @@ footer {
   column-gap: 3px;
 }
 
-#pictures > img {
+#pictures>img {
   width: 100%;
   margin-top: 3px;
 }
@@ -270,6 +272,7 @@ footer {
 }
 
 .contact-form {
+  text-align: center;
   background-color: rgba(70, 59, 1, 0.301);
   width: 60%;
   border: 1px solid #858585;
@@ -286,10 +289,10 @@ footer {
   background: transparent;
   width: 40%;
   height: 30px;
-  margin: 5px 0 20px 0;
+  /* margin: 5px 0 20px 0; */
   border: 1px solid #858585;
   border-radius: 4px;
-  padding:5px 10px;
+  padding: 5px 10px;
   font-size: 15px;
   color: #dadada;
 }
@@ -311,14 +314,18 @@ form #title {
   text-align: center;
 }
 
-form #full-name, #email, #message {
+form #full-name,
+#email,
+#message {
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
   outline: 0;
+  width: 95%;
 }
 
 form .action {
+  float: left;
   margin-bottom: 75px;
   background: rgb(209, 36, 6);
   border-radius: 4px;
@@ -354,40 +361,77 @@ form label {
     clear: both;
     display: inline-table;
   }
+
   #navi {
-    margin-left: 5px; 
+    margin-left: 5px;
     line-height: 35px;
   }
 }
 
 @media (max-width: 800px) {
-  #portrait, #portrait-container, #form { flex: 100%; }
-  #name {font-size: 6vw;}
+
+  #portrait,
+  #portrait-container,
+  #form {
+    flex: 100%;
+  }
+
+  #name {
+    font-size: 6vw;
+  }
+
   #navi {
-    margin-left: 5px; 
+    margin-left: 5px;
     line-height: 80px;
     flex-direction: row-reverse;
-}
+  }
 
-#quote1, #quote2 {
-  flex: 100%;
-}
+  #quote1,
+  #quote2 {
+    flex: 100%;
+  }
 
-#navi li {
-  margin-right: 25px;
+  #navi li {
+    margin-right: 25px;
 
-}
+  }
+
   #mask {
     margin-left: 30px;
     margin-right: 50px;
   }
 
-  #form, .contact-form {
+  #form,
+  .contact-form {
     width: 90%;
     margin: 75px auto;
     margin-left: 1.5%;
     clear: both;
     display: inline-table;
+  }
+
+  #full-name, #email, #mesage {
+    width: 95%;
+  }
+
+  #form {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 75%;
+    margin: 3em;
+  }
+
+  #tnb h2 {
+    width: 30%;
+    margin-left: 35%;
+  }
+
+  #pictures {
+    column-count: 2;
   }
 }
 
@@ -396,11 +440,21 @@ form label {
     width: 50%;
     margin-left: 25%;
   }
+
   #navi {
     margin-left: 10%;
     margin-right: 10%;
     line-height: 25px;
-}
+  }
+  
+  #pictures {
+    column-count: 1;
+  }
+
+  .contact-form {
+    width: 85%;
+    margin: 1em auto;
+  }
 }
 
 @media (max-width: 375px) {
@@ -408,22 +462,22 @@ form label {
     width: 50%;
     margin-left: 25%;
   }
+
   #navi {
     margin-left: 5%;
     margin-right: 5%;
-    line-height: 25px;
-}
+  }
 }
 
 @media (max-width: 320px) {
   #navi {
     margin-left: 15%;
-    margin-right: 0; 
+    margin-right: 0;
     line-height: 25px;
-} 
-#tnb h2 {
-  width: 50%;
-  margin-left: 25%;
-}
-}
+  }
 
+  #tnb h2 {
+    width: 50%;
+    margin-left: 25%;
+  }
+}

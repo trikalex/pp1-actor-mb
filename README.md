@@ -6,7 +6,7 @@ This site is meant to serve as a platform for the ones that love the Dramatic Ar
 The goal of this platform is to briefly introduce the fan to the work of this artist 
 and to facilitate the option of further discovering the work of Marius Bodochi through the use of social media and the Bucharest National Theater website! 
 
-![Home Screen](assets/images/readme-pics/homeimg_full.png)
+![Home Screen](documentation/homeimg_full.png)
 
 ## Features
 
@@ -27,7 +27,7 @@ but any curios minds to keep track of the artist, his latest works, any public a
 - This Theater Mask symbol also serves as an estetic element which is supposed to be well integrated in the design of the website.  
 - The Navigation bar is also fully responsive and will adapt according to the screen size.
 
-![Navi Bar](assets/images/readme-pics/navi_bar.png)
+![Navi Bar](documentation/navi_bar.png)
 
 - __Home page top__
 
@@ -36,7 +36,7 @@ that is overlayed with the Artist name and a quick introduction to his career ti
 - The color combination and the black and white picture are supposed to introduce the user to the Artist and that has a long fruitful career in the Dramatic Art.
 - This combination, while introdcing the Actor it also sets the stage for the next section in a catchy and nostalgic way that transposes the user in the fascinating world of thatre and film!   
 
-![Introduction](assets/images/readme-pics/intro.png)
+![Introduction](documentation/intro.png)
 
 - __About Section__
 
@@ -46,14 +46,14 @@ that is overlayed with the Artist name and a quick introduction to his career ti
 - The third section or the section on the right side, presents a remarkable quote about the artist written by the prolific writer and arts critic from Romania, Mihaela Dordea.
 - As an important note for the About section, since is situated on the Home Page (below the introduction image), the user is presented with a handy feature that allows the page to scroll back to the top simply by clicking the stylish theater mask icon situated to the right of the About title.
 
-![About](assets/images/readme-pics/home_about.png)
+![About](documentation/home_about.png)
 
 - __National Bucharest Theater Section__
 
 - This section is minimal in design and besides the esthetical aspect it's also meant to serve the purpose of redirecting the user to the Actor profile over to the Bucharest National Theatre website. 
 - This functionality is met by clicking on the red institution icon situated above the "BUCHAREST NATIONAL THEATRE" title. 
 
-![BNT](assets/images/readme-pics/tnb_sec.png)
+![BNT](documentation/tnb_sec.png)
 
 - __Footer Section__
 
@@ -62,14 +62,14 @@ that is overlayed with the Artist name and a quick introduction to his career ti
 - All links are set to open in a new browser tab in order to ease the user navigation. 
 - The footer section is of course present at the bottom of all three pages that are accessible through the Navigation bar. 
 
-![Footer](assets/images/readme-pics/footer.png)
+![Footer](documentation/footer.png)
 
 - __Media Tab__
 
 - This tab is supposed to provide a collage of images that represent the highlights of the Artists career on stage or on film sets
 - The expressive gestures, poses and attitudes manifested by the actor through the intepreted roles in these picures should provide a clear representation of the artists abilities and acting! 
 
-![Media](assets/images/readme-pics/mediascreen.png)
+![Media](documentation/mediascreen.png)
 
 - __Contact Tab__ 
 
@@ -79,7 +79,7 @@ that is overlayed with the Artist name and a quick introduction to his career ti
 - At the bottom of the form there are two stylized inputs, one for submitting the message and the other one for reseting the form. 
 - Both buttons are stylized in the same manner as the Mask Icon in the Navigation bar.
 
-![Contact](assets/images/readme-pics/contact.png)
+![Contact](documentation/contact.png)
 
 ### Followup Features
 
@@ -100,32 +100,61 @@ where the already booked and the free dates are highlighted in a distinct way.
 
 ### Extra testing
 
-- Extra testing was performed for the overall score of the website on different levels through the use of Lighthouse found inside the inspector tools in Google Chrome.
-- The results were as follows:
+- Extra testing was performed for the overall score of the website on different levels with the use of Lighthouse found inside the inspector tools in Google Chrome.
+- The results for the Home, Media and Contact page were as follows:
 
-![Lighthouse](assets/images/readme-pics/lighthouse_test.png)
+- ![Lighthouse-Home](documentation/lighthouse_test.png)
+
+- ![Lighthouse-Media](documentation/lighthouse_media.png)
+
+- ![Lighthouse-Coontact](documentation/lighthouse_contact.png)
 
 ### Validator Tests
 
 - For the HTML files (index.html, media.html & contact.html):
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official 
+  - [W3C validator-index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrikalex.github.io%2Fpp1-actor-mb%2Findex.html) 
+  - ![index.html](documentation/validator/index_valid.png)
+
+  - [W3C validator-media.html](https://validator.w3.org/nu/?doc=https://trikalex.github.io/pp1-actor-mb/media.html)
+  - ![media.html](documentation/validator/media_valid.png)
+
+  - [W3C validator-contact.html](https://validator.w3.org/nu/?doc=https://trikalex.github.io/pp1-actor-mb/contact.html)
+  - ![contact.html](documentation/validator/contact_valid.png)
 
 - For the style.css file: 
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw3) CSS-validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrikalex.github.io%2Fpp1-actor-mb)
+  - ![style.css](documentation/validator/css_valid.png)
 
 ### Unfixed Issues
 
-- **Navigation** - on small screens 320px will scale slightly to the left side.
 - **About section** - the text boxes will display slightly off centered from 1024px down to 320px 
-- **Contact form** - will display slightly offcentered from 768px and down
 
 ## Deployment
 
-- The website was deployed to GitHub pages by taking the following steps: 
-  - In the GitHub repository, navigate to the Settings tab (top left menu, the last tab to the right) 
-  - From the side menu, under **General** select _Pages_  
-  - On the front page that opened, under **Branch**, from the dropdown menu under _none_ sellect _main_ and click on the _Save_ button
-  - Once the main branch has been selected, the page can be refreshed and on top (under **GitHub Pages**) the _https://_ address where the site has been deployed will be displayed, indicating the successful deployment.
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://github.com/trikalex/pp1-actor-mb), navigate to the Settings tab 
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://trikalex.github.io/pp1-actor-mb/)
+
+### Local Deployment
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/trikalex/pp1-actor-mb) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/trikalex/pp1-actor-mb.git`
+7. Press Enter to create your local clone.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/trikalex/pp1-actor-mb)
 
 ## Credits 
 
