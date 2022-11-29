@@ -90,9 +90,18 @@ where the already booked and the free dates are highlighted in a distinct way.
 
 ## Testing 
 
-- The functionality and scaling testing was done extensively through the inspector toll on the Google Chrome browser but also on iPhone 13 & iPhone 13 Pro devices.
-- So far it was concluded that the scaling works well down to iPhone 13 Pro or 390 / 844px, with some of the elemts that are not perfectly centered when scaling down to 320 / 1415px. 
-- However all functionalities are working correctly, are perfectly accessible and visible even when scaling down to 320px.
+- The functionality and scaling testing was done extensively through the inspector toll on the Google Chrome and on Microsoft Edge browser.
+- It was concluded that the scaling and functionality works perfectly well from 4K to 1024px and all the way down to 375px.
+- Below the screenshots from both browsers can be seen:
+  - ### Microsoft Edge
+  - ![edge_laptop1024](documentation/scaling/edge_home_laptop1024.jpeg)
+  - ![edge_tablet768](documentation/scaling/edge_contact_tablet768.jpeg)
+  - ![edge_mobile425](documentation/scaling/edge_media1_mobile425.png)
+
+  - ### Google Chrome
+  - ![chrome_laptop1024](documentation/scaling/chrome_contact_laptop1024.png)
+  - ![chrome_tablet768](documentation/scaling/chrome_media_tablet768.png)
+  - ![chrome_mobile375](documentation/scaling/chrome_home_mobile425.png)
 
 ### Bugs & issues
   - One of the main challenges was to keep the [BNT] text box section on the Home Page centered when scaling down to smaller screens.
