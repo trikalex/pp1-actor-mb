@@ -91,7 +91,7 @@ where the already booked and the free dates are highlighted in a distinct way.
 ## Testing 
 
 - The functionality and scaling testing was done extensively through the inspector toll on the Google Chrome and on Microsoft Edge browser.
-- It was concluded that the scaling and functionality works perfectly well from 4K to 1024px and all the way down to 375px.
+- It was concluded that both the scaling and functionality work perfectly well from 4K to 1024px and all the way down to 375px.
 - Below the screenshots from both browsers can be seen:
   - ### Microsoft Edge
   - ![edge_laptop1024](documentation/scaling/edge_home_laptop1024.jpeg)
